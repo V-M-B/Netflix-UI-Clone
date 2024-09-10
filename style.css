@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&display=swap');
+
+* {
+     margin: 0;
+     padding: 0;
+     font-family: 'Poppins', sans-serif;
+}
+
+body {
+     background-color: black;
+}
+
+
+.main {
+     height: 90vh;
+     background-image: url(Assets/Images/HeroSection-background.jpg);
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-size: max(1500px, 100vw);
+     position: relative;
+}
+
+.main .box {
+     height: 90vh;
+     width: 100%;
+     opacity: 0.69;
+     background-color: black;
+     position: absolute;
+     top: 0;
+}
+
+nav {
+     height: 80px;
+     max-width: 70vw;
+     margin: auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+nav img {
+     width: 150px;
+     margin-top: 25px;
+     position: relative;
+     z-index: 10;
+     color: red;
+}
+
+nav button {
+     position: relative;
+     z-index: 10;
+}
+
+.hero {
+     height: calc(100% - 80px);
+     color: white;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     font-family: 'Helvetica Neue', 'Segoe UI', 'Martel Sans', sans-serif;
+     gap: 23px;
+     padding: 0px 30px;
+}
+
+.hero> :nth-child(1) {
+
+     font-size: 48px;
+     font-weight: 900;
+     text-align: center;
+}
+
+.hero> :nth-child(2) {
+     font-size: 24px;
+     font-weight: 400;
+     text-align: center;
+}
+
+.hero> :nth-child(3) {
+     font-size: 20px;
+     font-weight: 400;
+     text-align: center;
+}
+
+.BTN {
+     padding: 10px 20px;
+     font-weight: 400;
+     border: 1px solid white;
+     border-radius: 4px;
+     background-color: rgba(128, 128, 128, 0.053);
+     color: white;
+     cursor: pointer;
+     font-family: 'Poppins', sans-serif;
+}
+
+.BTN:hover {
+     background-color: rgba(105, 105, 105, 0.518);
+}
+
+.btn-red-sm {
+     background-color: red;
+     color: white;
+     margin-top: 25px;
+     margin-left: 10px;
+}
+
+.btn-red-sm:hover {
+     background-color: rgb(95, 2, 2);
+}
+
+.heroButtons {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 16px;
+}
+
+.btn-red {
+     background-color: red;
+     color: white;
+     padding: 17px 17px 17px 17px;
+     font-size: 20px;
+     border-radius: 4px;
+     font-weight: 400;
+} 
+
+.btn-red:hover {
+     background-color: rgb(95, 2, 2);
+}
+
+.main input {
+     padding: 20px 100px 20px 14px;
+     font-weight: 400;
+     font-size: 12px;
+     border-radius: 4px;
+     background-color: rgba(30, 30, 30, 0.7);
+     border: 1px solid rgba(246, 238, 228, 0.5);
+     color: white;
+}
+
+@media screen and (max-width: 500px) {
+    .BTN {
+         padding: 6px;
+    }
+
+    .main input {
+         padding: 15px 50px 15px 14px;
+    }
+
+    .btn-red {
+         font-size: 15px;
+         padding: 16px;
+    }
+
+    .heroButtons {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         gap: 14px;
+    }
+
+    .secImg video {
+      width: 23vw;
+      position: absolute;
+      top: 19px;
+      right: 17px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .BTN {
+         padding: 3px;
+    }
+
+    .main input {
+         padding: 7px 25px 7px 6px;
+    }
+
+    .btn-red {
+         font-size: 15px;
+         padding: 14px;
+    }
+
+    .heroButtons {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         gap: 16px;
+    }
+
+    #video2 {
+      width: 20vw;
+      position: absolute;
+      top: 10px;
+      right: 21px;
+    }
+}
+
+.seperation {
+     height: 8px;
+     background-color: rgba(75, 74, 74, 0.473);
+}
+
+.first {
+     min-height: auto;
+     max-width: 70vw;
+     padding: 8px;
+     margin: auto;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+@media screen and (max-width: 1300px) {
+    nav {
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 15vw;
+    }
+
+    .secImg video {
+        width: 11vw;
+    }
+
+    .hero> :nth-child(1) {
+         font-family: 'Poppins', sans-serif;
+         font-weight: 900;
+         font-size: 32px;
+         text-align: center;
+    }
+
+    .hero> :nth-child(2) {
+         font-weight: 400;
+         font-size: 18px;
+         text-align: center;
+    }
+
+    .hero> :nth-child(3) {
+         font-weight: 400;
+         font-size: 18px;
+         text-align: center;
+    }
+
+    .heroButtons {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         gap: 16px;
+    }
+}
+
+#span1 {
+     font-size: 46px;
+     font-weight: 900;
+     font-family: 'Helvetica Neue', 'Segoe UI', 'Martel Sans', sans-serif;
+}
+
+#span2 {
+     font-size: 24px;
+     font-weight: 400;
+     font-family: 'Helvetica Neue', 'Segoe UI', 'Martel Sans', sans-serif;
+}
+
+.secImg {
+     position: relative;
+}
+
+.secImg img {
+     width: 30vw;
+     position: relative;
+     z-index: 10;
+}
+
+.secImg video {
+     width: 22vw;
+     position: absolute;
+     top: 67px;
+     right: 59px;
+
+}
+
+#video2 {
+     width: 19vw;
+     position: absolute;
+     top: 30px;
+     right: 80px;
+}
+
+.faq>h1 {
+     color: white;
+     font-size: 48px;
+     font-weight: 900;
+     text-align: center;
+     margin-top: 50px;
+     margin-bottom: 25px;
+     font-family: 'Helvetica Neue', 'Segoe UI', 'Martel Sans', sans-serif;
+}
+
+.faqbox {
+     max-width: 70vw;
+     margin: 10px auto;
+     padding: 24px;
+     display: flex;
+     justify-content: space-between;
+     background-color: #2d2d2d;
+     color: white;
+     font-size: 24px;
+     font-weight: 400;
+     font-family: 'Helvetica Neue', 'Segoe UI', 'Martel Sans', sans-serif;
+     transition: all 1s ease-out;
+     cursor: pointer;
+}
+
+.faqbox:hover {
+     background-color: #c40e0e;
+}
+
+.faq>h4 {
+     color: white;
+     font-size: 20px;
+     font-weight: 400;
+     text-align: center;
+     margin-top: 35px;
+     margin-bottom: 15px;
+     font-family: 'Helvetica Neue', 'Segoe UI', 'Martel Sans', sans-serif;
+}
+
+.faq .heroButtons {
+     margin-bottom: 40px;
+}
+
+.faq .heroButtons input {
+     padding: 20px 100px 20px 14px;
+     font-weight: 400;
+     font-size: 12px;
+     border-radius: 4px;
+     background-color: rgba(30, 30, 30, 0.7);
+     border: 1px solid rgba(246, 238, 228, 0.5);
+     color: white;
+}
+
+footer {
+     color: white;
+     max-width: 70vw;
+     margin: 75px auto;
+}
+
+footer .questions {
+     font-size: 16px;
+     font-weight: 400;
+     margin-bottom: 25px;
+}
+
+.footer {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     color: white;
+}
+
+@media screen and (max-width: 1300px) {
+    footer {
+         max-width: 90vw;
+    }
+
+    .footer {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         color: white;
+         gap: 25px;
+    }
+}
+
+.footer-item { 
+     display: flex;
+     flex-direction: column;
+     gap: 25px;
+}
+
+
+
+.footer .footer-item a {
+     color: white;
+     font-size: 14px;
+     font-weight: 400;
+     font-family: 'Helvetica Neue', 'Segoe UI', 'Martel Sans', sans-serif;
+     cursor: pointer;
+}
+
+.footerBTN {
+     margin: 25px 0px;
+}
+
+.footerBTN p {
+     font-size: 14px;
+     font-weight: 400;
+     margin: 25px 0px;
+}
